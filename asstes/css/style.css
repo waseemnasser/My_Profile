@@ -6,7 +6,7 @@
 }
 
 .mode_container {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     background-color: #f1f5f9;
     transition: background-color 0.5s ease;
@@ -29,7 +29,7 @@
 }
 
 .myProfile {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +57,7 @@
     }
 
     .myProfile_right {
-        max-width: 400px;
+        width: 35%;
 
         img {
             width: 100%;
@@ -79,15 +79,17 @@
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:768px) {
     .whiteSpacing {
-        padding: 0 50px;
+        padding: 0 20px;
     }
 
     .myProfile {
-        margin-top: 50px;
+        margin-top: 20px;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        gap: 15px;
 
         .myProfile_left {
             max-width: 100%;
@@ -96,21 +98,32 @@
             align-items: center;
 
             h1 {
-                font-size: 40px;
+                font-size: 26px;
             }
 
-            .describe,
+            .describe {
+                font-size: 16px;
+                line-height: 22px;
+            }
             .skills {
                 font-size: 16px;
+                line-height: 22px;
             }
+
         }
 
         .myProfile_right {
-            max-width: 280px;
+            width: 70%;
         }
     }
 }
 
 .social {
-    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.moon,
+.sun {
+    cursor: pointer;
+    font-size: 24px;
 }
